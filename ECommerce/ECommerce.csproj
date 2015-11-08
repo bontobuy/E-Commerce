@@ -162,7 +162,21 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DataContexts\ECommerceDb.cs" />
+    <Compile Include="DataContexts\ECommerceMigrations\201511081508032_InitialCreate.cs" />
+    <Compile Include="DataContexts\ECommerceMigrations\201511081508032_InitialCreate.Designer.cs">
+      <DependentUpon>201511081508032_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\ECommerceMigrations\Configuration.cs" />
     <Compile Include="DataContexts\IdentityDb.cs" />
+    <Compile Include="DataContexts\IdentityMigrations\201511081444353_InitialCreate.cs" />
+    <Compile Include="DataContexts\IdentityMigrations\201511081444353_InitialCreate.Designer.cs">
+      <DependentUpon>201511081444353_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\IdentityMigrations\201511081503254_InitialCreate1.cs" />
+    <Compile Include="DataContexts\IdentityMigrations\201511081503254_InitialCreate1.Designer.cs">
+      <DependentUpon>201511081503254_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContexts\IdentityMigrations\Configuration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,6 +253,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataContexts\ECommerceMigrations\201511081508032_InitialCreate.resx">
+      <DependentUpon>201511081508032_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\IdentityMigrations\201511081444353_InitialCreate.resx">
+      <DependentUpon>201511081444353_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\IdentityMigrations\201511081503254_InitialCreate1.resx">
+      <DependentUpon>201511081503254_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
